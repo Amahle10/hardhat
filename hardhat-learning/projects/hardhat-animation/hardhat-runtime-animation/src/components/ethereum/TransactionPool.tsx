@@ -1,0 +1,1 @@
+export function TransactionPool({onInspect}:{onInspect:(id:string)=>void}){return <button data-component="pool" className="pool" onClick={()=>onInspect('pool')}><b>TRANSACTION POOL</b><small>1 pending</small></button>}

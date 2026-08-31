@@ -1,0 +1,1 @@
+export function CodeWindow(){return <div className="code-window"><code><span>contract</span> Counter {'{'}<br/>  uint256 public <mark>count</mark>;<br/>  <span>function</span> increment() public {'{'} count++; {'}'}<br/>{'}'}</code><b>STATE VARIABLE · NOT DEPLOYED</b></div>}

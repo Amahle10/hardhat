@@ -1,0 +1,1 @@
+export function TransactionCard({creation}:{creation:boolean}){return <div className="tx-card"><b>{creation?'CONTRACT CREATION':'FUNCTION'} TRANSACTION</b><span>FROM <code>0xf39F…</code></span><span>TO <code>{creation?'null':'0x5FbDB231…'}</code></span><span>DATA <code>{creation?'0x6080604052…':'0xd09de08a'}</code></span></div>}

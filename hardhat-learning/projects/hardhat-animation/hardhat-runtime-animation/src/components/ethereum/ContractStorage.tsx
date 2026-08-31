@@ -1,0 +1,1 @@
+export function ContractStorage({count,onInspect,id='storage'}:{count:number;onInspect:(id:string)=>void;id?:string}){return <button data-component={id} className="storage" onClick={()=>onInspect(id)}><small>SLOT 0</small><span>count = <strong>{count}</strong></span></button>}

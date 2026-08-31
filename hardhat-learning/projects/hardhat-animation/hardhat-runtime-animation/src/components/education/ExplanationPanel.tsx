@@ -1,0 +1,2 @@
+import type {Scene} from '../../types/scenes'
+export function ExplanationPanel({scene,index}:{scene:Scene;index:number}){return <section className="explanation cinematic-explanation"><strong>{String(index+1).padStart(2,'0')}</strong><div><small>CURRENT PROCESS</small><h2>{scene.title}</h2><p>{scene.description}</p></div><div className="io"><section><small>FILES / DATA ENTERING</small><p>{scene.input}</p></section><section><small>PROCESS</small><p>{scene.process}</p></section><section><small>FILES / DATA LEAVING</small><p>{scene.output}</p></section></div></section>}

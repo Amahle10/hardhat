@@ -1,0 +1,1 @@
+export function EVM({onInspect}:{onInspect:(id:string)=>void}){return <button data-component="evm" className="evm" onClick={()=>onInspect('evm')}><span>EVM</span><small>BYTECODE EXECUTION</small></button>}

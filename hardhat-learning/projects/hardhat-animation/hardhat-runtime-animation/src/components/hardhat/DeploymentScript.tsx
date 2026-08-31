@@ -1,0 +1,1 @@
+export function DeploymentScript(){return <div data-component="deploy" className="detail-card"><code>m.contract(&quot;Counter&quot;)</code><small>deployment logic → ethers → ContractFactory</small></div>}

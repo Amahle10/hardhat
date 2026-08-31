@@ -1,0 +1,198 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Hardhat 3 — Complete Course: From Installation to Verified Testnet Deployment</title><link rel="stylesheet" href="styles2.css" /><script src="script.js" defer></script></head><body class="home-page">
+<!-- COURSE SIDEBAR -->
+<aside class="course-sidebar" id="course-sidebar">
+  <div class="sidebar-heading"><button class="sidebar-close" type="button" aria-label="Close course menu">&times;</button><a class="home-link active-home" href="index.html">Course Home</a><a class="sidebar-brand" href="index.html"><mark>HARDHAT 3</mark><strong>Complete Course</strong></a></div>
+  <nav class="lesson-list" aria-label="Course lessons">
+    <div class="sidebar-group"><p class="sidebar-label">GETTING STARTED</p>
+      <a class="lesson-link" href="pages/01-what-exactly-is-hardhat.html"><span>PART 1</span>What Hardhat actually is</a><a class="lesson-link" href="pages/02-prerequisites.html"><span>PART 2</span>Prerequisites</a><a class="lesson-link" href="pages/03-create-hardhat-project.html"><span>PART 3</span>Creating the project</a><a class="lesson-link" href="pages/04-initialize-hardhat.html"><span>PART 4</span>Understanding the initialization questions</a><a class="lesson-link" href="pages/05-hardhat-version.html"><span>PART 5</span>Project template choices</a>
+    </div>
+    <div class="sidebar-group"><p class="sidebar-label">PROJECT ANATOMY</p>
+      <a class="lesson-link" href="pages/06-project-location.html"><span>PART 6</span>Understanding the generated directory</a><a class="lesson-link" href="pages/07-project-type.html"><span>PART 7</span>Understanding package.json</a><a class="lesson-link" href="pages/08-install-dependencies.html"><span>PART 8</span>Hardhat packages and plugins</a><a class="lesson-link" href="pages/09-examine-project.html"><span>PART 9</span>hardhat.config.ts</a><a class="lesson-link" href="pages/10-contracts.html"><span>PART 10</span>Default Counter contract</a>
+    </div>
+    <div class="sidebar-group"><p class="sidebar-label">COMPILATION</p>
+      <a class="lesson-link" href="pages/11-test.html"><span>PART 11</span>Solidity compiler</a><a class="lesson-link" href="pages/12-ignition.html"><span>PART 12</span>Compilation/build process internally</a><a class="lesson-link" href="pages/13-scripts.html"><span>PART 13</span>artifacts/ and cache/</a><a class="lesson-link" href="pages/14-hardhat-config.html"><span>PART 14</span>ABI and bytecode</a>
+    </div>
+    <div class="sidebar-group"><p class="sidebar-label">TESTING</p>
+      <a class="lesson-link" href="pages/15-package-json.html"><span>PART 15</span>Solidity tests</a><a class="lesson-link" href="pages/16-dev-dependencies.html"><span>PART 16</span>TypeScript/Viem tests</a>
+    </div>
+    <div class="sidebar-group"><p class="sidebar-label">LOCAL BLOCKCHAIN</p>
+      <a class="lesson-link" href="pages/17-node-modules.html"><span>PART 17</span>Hardhat simulated blockchain</a><a class="lesson-link" href="pages/18-hardhat-toolbox.html"><span>PART 18</span>Hardhat Node</a><a class="lesson-link" href="pages/19-hardhat-plugin.html"><span>PART 19</span>Accounts and signing</a><a class="lesson-link" href="pages/20-verify-hardhat.html"><span>PART 20</span>JSON-RPC</a>
+    </div>
+    <div class="sidebar-group"><p class="sidebar-label">HARDHAT DEVELOPMENT</p>
+      <a class="lesson-link" href="pages/21-counter-contract.html"><span>PART 21</span>Hardhat scripts</a><span class="lesson-link unavailable"><span>PART 22</span>Hardhat Runtime Environment</span><span class="lesson-link unavailable"><span>PART 23</span>Hardhat Console</span><span class="lesson-link unavailable"><span>PART 24</span>Hardhat Ignition</span>
+    </div>
+    <div class="sidebar-group"><p class="sidebar-label">DEPLOYMENT</p>
+      <span class="lesson-link unavailable"><span>PART 25</span>Local deployment</span><span class="lesson-link unavailable"><span>PART 26</span>Persistent localhost deployment</span><span class="lesson-link unavailable"><span>PART 27</span>Network configuration</span><span class="lesson-link unavailable"><span>PART 28</span>Sepolia</span><span class="lesson-link unavailable"><span>PART 29</span>RPC providers / Alchemy</span><span class="lesson-link unavailable"><span>PART 30</span>Private keys and configuration variables</span><span class="lesson-link unavailable"><span>PART 31</span>Live deployment</span><span class="lesson-link unavailable"><span>PART 32</span>Etherscan / blockchain explorers</span><span class="lesson-link unavailable"><span>PART 33</span>Contract verification</span>
+    </div>
+    <div class="sidebar-group"><p class="sidebar-label">ADVANCED HARDHAT</p>
+      <span class="lesson-link unavailable"><span>PART 34</span>Gas / coverage / debugging</span><span class="lesson-link unavailable"><span>PART 35</span>Custom tasks</span><span class="lesson-link unavailable"><span>PART 36</span>Forking networks</span><span class="lesson-link unavailable"><span>PART 37</span>Ethers.js alternative</span><span class="lesson-link unavailable"><span>PART 38</span>OpenZeppelin and external libraries</span>
+    </div>
+    <div class="sidebar-group"><p class="sidebar-label">WORKFLOW &amp; REFERENCE</p>
+      <span class="lesson-link unavailable"><span>PART 39</span>Recommended npm scripts</span><span class="lesson-link unavailable"><span>PART 40</span>Complete Hardhat lifecycle</span><span class="lesson-link unavailable"><span>PART 41</span>Common Hardhat 2 vs Hardhat 3 mistakes</span><span class="lesson-link unavailable"><span>PART 42</span>Command reference</span>
+    </div>
+  </nav>
+</aside>
+<div class="sidebar-overlay" data-sidebar-close></div><header class="mobile-bar"><button class="menu-toggle" type="button" aria-label="Open course menu" aria-controls="course-sidebar" aria-expanded="false">&#9776;</button><a href="index.html">Hardhat 3</a></header>
+<main class="course-container landing-container home-main">
+
+    <!-- =====================================================
+         COURSE HEADER
+    ====================================================== -->
+
+    <header class="course-header">
+
+      <h1>
+        <span class="title-highlight">
+          Hardhat 3 — Complete Course: From Installation to Verified Testnet Deployment
+        </span>
+      </h1>
+
+    </header>
+
+
+    <!-- =====================================================
+         INTRODUCTION
+    ====================================================== -->
+
+    <section class="course-intro">
+
+      <p>
+        Yes. We’re going to treat
+        <strong>Hardhat itself as the subject</strong>,
+        before worrying about building a complicated Solidity application.
+      </p>
+
+      <p>
+        The goal is that when you finish this course, commands such as:
+      </p>
+
+
+      <div class="terminal-shot">
+
+        <div class="terminal-header">
+
+          <div class="terminal-buttons">
+            <span class="terminal-dot"></span>
+            <span class="terminal-dot"></span>
+            <span class="terminal-dot"></span>
+          </div>
+
+          <span class="terminal-title">
+            hardhat-course — terminal
+          </span>
+
+        </div>
+
+        <pre><code><span class="prompt">$</span> npx hardhat build
+<span class="prompt">$</span> npx hardhat test
+<span class="prompt">$</span> npx hardhat node
+<span class="prompt">$</span> npx hardhat ignition deploy ...</code></pre>
+
+      </div>
+
+
+      <p>
+        will not just be commands you memorized. You will know:
+      </p>
+
+
+      <p class="emphasis">
+        <strong>
+          what starts → what file Hardhat reads → what plugin runs →
+          what compiler runs → what files are generated →
+          what blockchain is being used → which account signs →
+          what RPC call is made → where the transaction goes →
+          where the contract address comes from →
+          how Etherscan sees it.
+        </strong>
+      </p>
+
+
+      <p>
+        This course is specifically for <strong>Hardhat 3</strong>.
+        As of August 31, 2026, the official Hardhat site lists
+        <strong>Hardhat v3.15.0</strong>, and its current default templates
+        have moved to Solidity <strong>0.8.34</strong>.
+        Hardhat 3 requires Node.js <strong>22.13.0 or later</strong>.
+      </p>
+
+    </section>
+
+
+    <hr />
+
+
+    <!-- =====================================================
+         COURSE MAP
+    ====================================================== -->
+
+    <section class="course-section">
+
+      <h2>COURSE MAP</h2>
+
+      <p>
+        We are going through Hardhat in this order:
+      </p>
+
+
+      <pre class="course-map"><code>PART 1     What Hardhat actually is
+PART 2     Prerequisites
+PART 3     Creating the project
+PART 4     Understanding the initialization questions
+PART 5     Project template choices
+PART 6     Understanding the generated directory
+PART 7     Understanding package.json
+PART 8     Hardhat packages and plugins
+PART 9     hardhat.config.ts
+PART 10    Default Counter contract
+PART 11    Solidity compiler
+PART 12    Compilation/build process internally
+PART 13    artifacts/ and cache/
+PART 14    ABI and bytecode
+PART 15    Solidity tests
+PART 16    TypeScript/Viem tests
+PART 17    Hardhat simulated blockchain
+PART 18    Hardhat Node
+PART 19    Accounts and signing
+PART 20    JSON-RPC
+PART 21    Hardhat scripts
+PART 22    Hardhat Runtime Environment
+PART 23    Hardhat Console
+PART 24    Hardhat Ignition
+PART 25    Local deployment
+PART 26    Persistent localhost deployment
+PART 27    Network configuration
+PART 28    Sepolia
+PART 29    RPC providers / Alchemy
+PART 30    Private keys and configuration variables
+PART 31    Live deployment
+PART 32    Etherscan / blockchain explorers
+PART 33    Contract verification
+PART 34    Gas / coverage / debugging
+PART 35    Custom tasks
+PART 36    Forking networks
+PART 37    Ethers.js alternative
+PART 38    OpenZeppelin and external libraries
+PART 39    Recommended npm scripts
+PART 40    Complete Hardhat lifecycle
+PART 41    Common Hardhat 2 vs Hardhat 3 mistakes
+PART 42    Command reference</code></pre>
+
+
+      <p>
+        We will keep using one very small Counter contract because the
+        objective is to understand Hardhat, not get distracted by Solidity
+        complexity.
+      </p>
+
+    </section>
+
+
+    <hr />
+
+
+    <!-- =====================================================
+         PART 1
+    ====================================================== -->
+
+    <nav class="home-course-navigation" aria-label="Start course"><a class="start-course" href="pages/01-what-exactly-is-hardhat.html">Start Course <span>&rarr;</span></a></nav><footer class="course-footer">Hardhat 3 Complete Course</footer></main></body></html>

@@ -1,0 +1,2 @@
+import {Block} from './Block'
+export function Blockchain({publicNet,onInspect}:{publicNet:boolean;onInspect:(id:string)=>void}){return <div className="blocks"><Block number={publicNet?'#…91':'#0'} detail={publicNet?'parent':'genesis'} onInspect={onInspect}/><i>→</i><Block number={publicNet?'#…92':'#1'} detail="contract creation" onInspect={onInspect}/><i>→</i><Block number={publicNet?'#…93':'#2'} detail="increment · 0 → 1" onInspect={onInspect}/></div>}

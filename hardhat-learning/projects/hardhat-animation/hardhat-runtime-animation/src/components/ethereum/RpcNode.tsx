@@ -1,0 +1,1 @@
+export function RpcNode({onInspect}:{onInspect:(id:string)=>void}){return <button data-component="node" className="peer" onClick={()=>onInspect('node')}><b>ETHEREUM NODE</b><small>peer · mempool · state</small></button>}

@@ -1,0 +1,4 @@
+import {FileCode2,FileJson,FolderTree} from 'lucide-react'
+import {Terminal} from './Terminal'
+export function ProjectExplorer({scene,onInspect}:{scene:number;onInspect:(id:string)=>void}){return <section className="zone project"><label>YOUR PROJECT <span>LOCAL FILESYSTEM</span></label><Node id="source" onClick={onInspect}><FileCode2/><b>contracts/Counter.sol</b><small>uint256 public count;</small></Node><Node id="deploy" onClick={onInspect}><FolderTree/><b>ignition/modules/Counter.ts</b><small>m.contract(&quot;Counter&quot;)</small></Node><Node id="config" onClick={onInspect}><FileJson/><b>hardhat.config.ts</b><small>solidity · networks · accounts</small></Node><Terminal scene={scene}/></section>}
+export function Node({id,onClick,children,className=''}:{id:string;onClick:(id:string)=>void;children:React.ReactNode;className?:string}){return <button data-component={id} className={`node ${className}`} onClick={()=>onClick(id)}>{children}</button>}

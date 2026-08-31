@@ -1,0 +1,1 @@
+export function Block({number,detail,onInspect}:{number:string;detail:string;onInspect:(id:string)=>void}){return <button data-component="block" className="block" onClick={()=>onInspect('block')}><b>BLOCK {number}</b><small>{detail}</small></button>}
